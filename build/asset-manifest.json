@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.0b954161.css",
+    "main.js": "./static/js/main.94de5fa9.js",
+    "static/media/roman.png": "./static/media/roman.cb5a0e42b38d6c14c81b.png",
+    "static/media/caesar-dressing-cyrillic.otf": "./static/media/caesar-dressing-cyrillic.113e8b1037e3b77285d4.otf",
+    "static/media/fon.jpg": "./static/media/fon.e5a8d803a0c267c83404.jpg",
+    "static/media/arabic.jpg": "./static/media/arabic.1adbf150b7ab0251103c.jpg",
+    "index.html": "./index.html",
+    "main.0b954161.css.map": "./static/css/main.0b954161.css.map",
+    "main.94de5fa9.js.map": "./static/js/main.94de5fa9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b954161.css",
+    "static/js/main.94de5fa9.js"
+  ]
+}

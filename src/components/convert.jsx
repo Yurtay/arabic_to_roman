@@ -1,24 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Convert = ({ fnConvert }) => {
-  const [data, setData] = useState("");
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+const Convert = ({ fnConvert, result, name }) => {
   const handleChange = ({ target }) => {
-    setData(target.value);
-    console.log(data);
+    fnConvert(target.value);
   };
 
   return (
-    <div className="convert_container">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="">Enter number</label>
-        <input type="text" onChange={handleChange} name="arabica" />
-        <button onClick={() => fnConvert(data)}>Convert</button>
-        <span>Result: </span>
-      </form>
-    </div>
+    <>
+      <div className="convert_container">
+        <h2 id="convert_container_title">{`<->`}</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            placeholder="Enter number on arabic or roman...."
+            id="convert_input"
+            type="text"
+            onChange={handleChange}
+          />
+          <span id="span_result">{result}</span>
+        </form>
+      </div>
+    </>
   );
 };
 
